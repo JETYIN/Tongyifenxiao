@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view308"
+    android:layout_width="fill_parent"
+    android:layout_height="49.0dip" >
+
+    <View
+        android:id="@+id/view201"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F04641" />
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/view207"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/view312"
+            style="@style/black_20"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="48.0dip"
+            android:layout_marginRight="48.0dip"
+            android:gravity="center"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="80.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center" >
+
+        <ImageView
+            android:id="@+id/view206"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/view26"
+            style="@style/black_18"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:gravity="right|center" >
+
+        <TextView
+            android:id="@+id/view145"
+            style="@style/black_18"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/view346"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

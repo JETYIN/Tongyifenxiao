@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- 按钮配置 -->
+    <!-- 内粉色 -->
+    <style name="common_pink_btn_style">
+        <item name="android:textSize">@dimen/common_title_size20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/common_btn_pink_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- 外粉色 -->
+    <style name="common_out_pink_btn_style">
+        <item name="android:textSize">@dimen/common_title_size20</item>
+        <item name="android:textColor">#EF4641</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/out_pink_round_item</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 外粉色 -->
+    <style name="main_common_out_pink_btn_style">
+        <item name="android:textSize">@dimen/common_title_size20</item>
+        <item name="android:textColor">#EF4641</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/out_pink_round_item</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="common_red_btn_normal_style">
+        <item name="android:textSize">@dimen/common_title_size20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!-- 按钮配置 -->
+    <style name="common_orangle_btn_style">
+        <item name="android:textSize">@dimen/common_title_size8</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/orangle_submit_button_shape</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RedCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/red_checkbox_style</item>
+    </style>
+
+    <style name="dg_black_16" parent="@style/dg_text_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/btn_check_holo_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

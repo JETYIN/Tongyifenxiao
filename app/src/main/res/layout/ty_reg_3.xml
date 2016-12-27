@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_title_bar_height"
+        android:orientation="vertical"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_title_bar_height"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入您的上级分销商邀请码:"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dip"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:background="@color/white">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/out_gray_white_in_round_shape"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dip"
+                android:layout_marginLeft="15dip"
+                android:hint="邀请码"
+                android:textColorHint="#9b9b9b"
+                android:paddingRight="5dip"
+                android:paddingLeft="5dip"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/pz_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dip"
+                android:text="保证金:"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_toRightOf="@id/pz_money"
+                android:layout_width="wrap_content"
+                android:textColor="#FE0F09"
+                android:textSize="24sp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:text="25000.00"
+                android:paddingBottom="4dip"
+                />
+
+        </RelativeLayout>
+
+
+        <!-- button -->
+
+        <LinearLayout
+            android:id="@+id/btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="50dip" >
+
+                <Button
+                    android:id="@+id/ok"
+                    style="@style/common_red_btn_normal_style"
+                    android:background="@drawable/red_round_item"
+                    android:text="上一步" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="50dp" >
+
+                <Button
+                    android:id="@+id/complete"
+                    style="@style/common_red_btn_normal_style"
+                    android:background="@drawable/red_round_item"
+                    android:text="完成" />
+            </RelativeLayout>
+
+            <!-- end -->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

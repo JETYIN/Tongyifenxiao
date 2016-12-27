@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页导航 -->
+    <string-array name="bottom_bar_labels">
+        <item>首页</item>
+        <item>预约</item>
+        <item>商城</item>
+        <item></item>
+    </string-array>
+</resources>

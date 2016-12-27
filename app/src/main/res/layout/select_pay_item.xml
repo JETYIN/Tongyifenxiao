@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d9da" />
+
+    <RelativeLayout
+        android:id="@+id/confirm_order_pay_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_bg"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/PaddingLarge"
+        android:paddingLeft="@dimen/PaddingXLarge"
+        android:paddingTop="@dimen/PaddingLarge" >
+
+        <ImageView
+            android:id="@+id/confirm_order_pay_icon"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/PaddingMedium"
+            />
+
+        <CheckBox
+            android:id="@+id/confirm_order_pay_checkbox"
+            style="@style/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/PaddingLarge"
+            android:layout_marginRight="@dimen/PaddingXLarge"
+            android:button="@drawable/account_profile_radiobutton"
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/confirm_order_pay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/confirm_order_pay_icon"
+            android:textColor="#666666"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/confirm_order_pay_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_order_pay_name"
+            android:layout_toLeftOf="@id/confirm_order_pay_checkbox"
+            android:layout_toRightOf="@id/confirm_order_pay_icon"
+            android:textColor="#666666"
+            android:textSize="@dimen/TextSizeBigSmall"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d8d9da" />
+
+</LinearLayout>

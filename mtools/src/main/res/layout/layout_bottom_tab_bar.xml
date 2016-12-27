@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="#fafafa"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:gravity="center_vertical|left"
+              xmlns:pro="http://schemas.android.com/apk/res-auto"
+    >
+
+    <CheckedTextView
+        android:background="@null"
+        android:id="@+id/item_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/bg_home_icon_page"
+        android:text="首页"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:textColor="@drawable/bg_home_text"
+        />
+
+    <CheckedTextView
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/bg_home_icon_check"
+        android:text="预约"
+        android:drawablePadding="5dp"
+        android:textColor="@drawable/bg_home_text"
+        />
+
+    <CheckedTextView
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:id="@+id/item_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/bg_home_icon_shop"
+        android:text="商城"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:textColor="@drawable/bg_home_text"
+        />
+
+    <cn.qmz.tools.view.image.CircleImageView
+        android:id="@+id/item_personal"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avater_icon"
+        pro:border_color="@color/white"
+        pro:border_width="2.0dip" />
+
+</LinearLayout>

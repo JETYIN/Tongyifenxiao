@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.shopex.scstore">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络通信-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取MAC地址-->
+    <!-- 可选的权限： -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 获取logcat日志 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--  从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.oki.tydrm.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.oki.tydrm.ui.WelcomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserLoginActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.GuideActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserMainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.SetActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.WantUpdateActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserReg1"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserReg2"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserReg3"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.WantTXActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.MyInfoActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.WantTSActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.RegRuleActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.MyInvCodeActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.AboutActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.MyBankCardActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.TXmxActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.YJmxActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.oki.tydrm.ui.UserMangerActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104858246" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.oki.tydrm.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- ###################分享相关Activity##################-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55e55cdee0f55af4bd0030b1" />
+
+    </application>
+
+</manifest>

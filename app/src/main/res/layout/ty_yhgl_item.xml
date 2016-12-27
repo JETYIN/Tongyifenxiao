@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/white_round_shape">
+
+
+        <TextView
+            android:id="@+id/lianxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dip"
+            android:text="阿里巴巴"
+            android:textColor="#323232"
+            android:textSize="@dimen/main_font_size" />
+
+        <ImageView
+            android:id="@+id/right_into_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@mipmap/right_into" />
+
+        <TextView
+            android:id="@+id/lianxi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/right_into_4"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:text="三级分销商"
+            android:background="@null"
+            android:gravity="right"
+            android:textColor="#323232"
+            android:textSize="@dimen/main_font_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dip"
+            android:background="#dfdfdf"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

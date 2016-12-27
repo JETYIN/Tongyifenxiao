@@ -1,0 +1,273 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sybanner"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/setting"
+                android:layout_alignParentRight="true"
+                android:padding="15dip"
+                />
+
+            <TextView
+                android:id="@+id/my_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/nick_bg"
+                android:layout_marginTop="90dip"
+                android:text="暂无昵称"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                />
+
+        </RelativeLayout>
+        
+        
+        
+        
+        
+        <LinearLayout
+            android:id="@+id/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/txmx_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="110dip"
+                    android:layout_weight="1"
+                    android:background="#F87470"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/txmx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/txmx"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提现明细"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dip"
+                        android:layout_below="@id/txmx"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yjmx_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="110dip"
+                    android:layout_weight="1"
+                    android:background="#F58C89"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/yjmx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/yjmx"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="佣金明细"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dip"
+                        android:layout_below="@id/yjmx"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/yhgl_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="110dip"
+                    android:layout_weight="1"
+                    android:background="#F95752"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/yhgl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/yhgl"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户管理"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dip"
+                        android:layout_below="@id/yhgl"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/wysj_layout"
+                    android:layout_width="0dip"
+                    android:layout_height="110dip"
+                    android:layout_weight="1"
+                    android:background="#F14541"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/wysj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/wysj"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我要升级"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="10dip"
+                        android:layout_below="@id/wysj"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="16sp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_above="@id/tools"
+            android:layout_below="@id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dip"
+            android:paddingBottom="30dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:text="我的佣金"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:textColor="#54D5BC"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="1200.00"
+                    android:paddingBottom="4dip"
+                    />
+
+                <TextView
+                    android:id="@+id/yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/money"
+                    android:textColor="#54D5BC"
+                    android:textStyle="bold"
+                    android:text="元"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="150dip"
+                android:layout_height="0dip">
+
+                <Button
+                    android:id="@+id/wytx"
+                    android:layout_centerInParent="true"
+                    style="@style/main_common_out_pink_btn_style"
+                    android:background="@drawable/red_in_round_shape"
+                    android:text="我要提现" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

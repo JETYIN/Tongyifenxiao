@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginTop="50dip"
+        android:background="#F8F9FB"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/my_fx"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="我的分销商"
+            android:textSize="18sp"
+            android:textColor="#F05B57"
+            android:gravity="center"
+            />
+
+        <View
+            android:background="@color/red"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"/>
+        <TextView
+            android:id="@+id/my_yh"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="我的用户"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:orientation="horizontal"
+        android:layout_marginTop="91dip"
+        android:gravity="center"
+        >
+        <View
+            android:id="@+id/left_b"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="#F05B57"
+            android:layout_marginRight="60dip"
+            android:layout_marginLeft="60dip"
+            />
+
+        <View
+            android:id="@+id/right_b"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:background="#F05B57"
+            android:layout_marginRight="60dip"
+            android:layout_marginLeft="60dip"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fx_people"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="94dip"
+        android:orientation="vertical" >
+
+        <cn.qmz.tools.view.listview.PullRefreshListView
+            android:id="@+id/fxs_list"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:layout_height="match_parent"
+            />
+
+
+
+        <!--<ListView
+            android:visibility="gone"
+            android:id="@+id/fx_people_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/fx_peopleLetterListView"
+            android:background="#FFFFFF"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line_color"
+            android:dividerHeight="0px"
+            android:fadingEdge="none"
+            android:listSelector="#00FFFFFF"
+            android:scrollbars="none" />
+
+        <cn.qmz.tools.view.listview.BladeView
+            android:visibility="gone"
+            android:id="@+id/fx_peopleLetterListView"
+            android:layout_width="28dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_people"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="94dip"
+        android:orientation="vertical" >
+
+        <cn.qmz.tools.view.listview.PullRefreshListView
+            android:id="@+id/yh_list"
+            android:layout_width="match_parent"
+            android:divider="@null"
+            android:layout_height="match_parent"
+            />
+
+        <!--<ListView
+            android:id="@+id/my_people_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/my_peopleLetterListView"
+            android:background="#FFFFFF"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/line_color"
+            android:dividerHeight="0px"
+            android:fadingEdge="none"
+            android:listSelector="#00FFFFFF"
+            android:scrollbars="none" />
+
+        <cn.qmz.tools.view.listview.BladeView
+            android:id="@+id/my_peopleLetterListView"
+            android:layout_width="28dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

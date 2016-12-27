@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_header" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_title_bar_height"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dip"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="50dip" >
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="136dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/about_version_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:textColor="#9b9b9b"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:id="@+id/about_version_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/about_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@mipmap/about_tel"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="客服电话:400 888 9739"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/about_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/about_wechat"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="微信公众号:同蚁商城"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/about_webo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/about_webo"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="微博:3228823428@qq.com"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/about_copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dip"
+                android:gravity="center"
+                android:text="Copyright©2016\nAll Rights Reserved"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                 />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

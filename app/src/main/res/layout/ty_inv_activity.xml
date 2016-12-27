@@ -1,0 +1,438 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD0D0"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/layout_header" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_title_bar_height"
+        />
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_title_bar_height"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/yq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/white_round_shape"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/bg_left"
+                            android:layout_width="15dip"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/yellow_round_shape"
+                            >
+
+                            <ImageView
+                                android:layout_width="8dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:background="#F2F77A"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tj_left_1"
+                            android:layout_width="60dip"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/bg_left"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txt1"
+                                android:text="推荐"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/xu_line"
+                            android:layout_toRightOf="@id/tj_left_1"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/tj_left_1"
+                            >
+
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dip"
+                                    >
+
+
+                                    <ImageView
+                                        android:id="@+id/yq_icon_1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/yq_icon"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/yq_txt_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_icon_1"
+                                        android:layout_marginLeft="15dip"
+                                        android:text="邀请码(2级):"
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/yq_code_22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_txt_2"
+                                        android:layout_marginLeft="15dip"
+                                        android:text=""
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dip"
+                                    >
+
+
+                                    <ImageView
+                                        android:id="@+id/yq_icon_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/yq_icon"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/yq_txt_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_icon_2"
+                                        android:layout_marginLeft="15dip"
+                                        android:text="邀请链接(2级):"
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/share2"
+                                        android:layout_width="50dip"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/red_round_item">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="分享"
+                                            android:textColor="#ffffff"
+                                            android:textSize="18sp"
+                                            />
+
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+
+
+                                    <TextView
+                                        android:id="@+id/yq_url_2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        android:text=""
+                                        android:textColor="#323232"
+                                        android:textSize="14sp" />
+
+
+                                </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ji2"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginRight="10dip"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/yq3"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dip"
+                        android:layout_marginTop="30dip"
+                        android:background="@drawable/white_round_shape"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/bg_left_2"
+                            android:layout_width="15dip"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/pink_round_shape"
+                            >
+
+                            <ImageView
+                                android:layout_width="8dip"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:background="#F14545"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tj_left_2"
+                            android:layout_width="60dip"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/bg_left_2"
+                            android:gravity="center"
+                            >
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="我的"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txt2"
+                                android:text="推荐"
+                                />
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/xu_line"
+                            android:layout_toRightOf="@id/tj_left_2"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/tj_left_2"
+                            >
+
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dip"
+                                    >
+
+
+                                    <ImageView
+                                        android:id="@+id/yq_icon_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/yq_icon"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/yq_txt_33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_icon_3"
+                                        android:layout_marginLeft="15dip"
+                                        android:text="邀请码(3级):"
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+                                    <TextView
+                                        android:id="@+id/yq_code_33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_txt_33"
+                                        android:layout_marginLeft="15dip"
+                                        android:text=""
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dip"
+                                    >
+
+
+                                    <ImageView
+                                        android:id="@+id/yq_icon_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/yq_icon"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/yq_url_txt_4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_toRightOf="@+id/yq_icon_4"
+                                        android:layout_marginLeft="15dip"
+                                        android:text="邀请链接(3级):"
+                                        android:textColor="#323232"
+                                        android:textSize="@dimen/main_font_size" />
+
+                                    <RelativeLayout
+                                        android:id="@+id/share3"
+                                        android:layout_width="50dip"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="15dip"
+                                        android:background="@drawable/red_round_item">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="分享"
+                                            android:textColor="#ffffff"
+                                            android:textSize="18sp"
+                                            />
+
+
+                                    </RelativeLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+
+
+                                    <TextView
+                                        android:id="@+id/yq_url_3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="10dip"
+                                        android:text=""
+                                        android:textColor="#323232"
+                                        android:textSize="14sp" />
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ji3"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginRight="10dip"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
